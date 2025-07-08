@@ -3,6 +3,9 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    user-select: none;
+    -ms-user-select: none; /* Edge */
+    -webkit-user-select: none; /* Safari */
 }
 
 .calc {
@@ -13,12 +16,16 @@ body {
 }
 
 #display {
+    border: 1px solid #000;
     width: 96.9%;
     height: 40px;
     font-size: 1.5em;
     margin-bottom: 20px;
     text-align: right;
-    /* padding: 1px; */
+}
+
+input#display {
+    user-select: text;
 }
 
 .buttons button {
