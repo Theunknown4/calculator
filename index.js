@@ -3,7 +3,7 @@ let display = document.getElementById("display");
 /*numpad support */
 document.addEventListener("keydown", function(event) {
     const key = event.key;
-    console.log(key);
+    //console.log(key);
     if(!isNaN(key) || "+-*/.%".includes(key))
     {
         press(key);
