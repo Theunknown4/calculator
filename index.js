@@ -3,7 +3,6 @@ let display = document.getElementById("display");
 /*numpad support */
 document.addEventListener("keydown", function(event) {
     const key = event.key;
-    //console.log(key);
     if(!isNaN(key) || "+-*/.%".includes(key))
     {
         press(key);
@@ -50,10 +49,9 @@ function clearDisplay() {
 }
 
 function changeSign() {
-    console.log("WIP");
+    display.value = -display.value;
 }
 
-function isNumOrSymbol(str)
-{
+function isNumOrSymbol(str) {
     return /^[0-9+.\-*\/%]+$/.test(str);
 }
