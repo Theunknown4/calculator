@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator</title>
+    <link rel="icon" type="image/x-icon" href="/calculator/assets/icons8-calculator-16-DBpaGWMk.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='data:text/css;base64,Ym9keSB7DQogICAgZm9udC1mYW1pbHk6IEFyaWFsOw0KICAgIGRpc3BsYXk6IGZsZXg7DQogICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7DQogICAgbWFyZ2luLXRvcDogNTBweDsNCiAgICB1c2VyLXNlbGVjdDogbm9uZTsNCiAgICAtbXMtdXNlci1zZWxlY3Q6IG5vbmU7IC8qIEVkZ2UgKi8NCiAgICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lOyAvKiBTYWZhcmkgKi8NCn0NCg0KLmNhbGMgew0KICAgIGJvcmRlcjogMXB4IHNvbGlkICMwMDA7DQogICAgcGFkZGluZzogMjBweDsNCiAgICB3aWR0aDogMjU1cHg7DQogICAgYm9yZGVyLXJhZGl1czogMjBweDsNCn0NCg0KI2Rpc3BsYXkgew0KICAgIGJvcmRlcjogMXB4IHNvbGlkICMwMDA7DQogICAgd2lkdGg6IDk2LjklOw0KICAgIGhlaWdodDogNDBweDsNCiAgICBmb250LXNpemU6IDEuNWVtOw0KICAgIG1hcmdpbi1ib3R0b206IDIwcHg7DQogICAgdGV4dC1hbGlnbjogcmlnaHQ7DQp9DQoNCmlucHV0I2Rpc3BsYXkgew0KICAgIHVzZXItc2VsZWN0OiB0ZXh0Ow0KfQ0KDQouYnV0dG9ucyBidXR0b24gew0KICAgIHdpZHRoOiA1MHB4Ow0KICAgIGhlaWdodDogNTBweDsNCiAgICBtYXJnaW46IDVweDsNCiAgICBmb250LXNpemU6IDEuMmVtOw0KfQ=='>
+  <script type="module" crossorigin src="/calculator/assets/index-BgNn_lfr.js"></script>
+</head>
+<body>
+    <div class="calc">
+        <input id="display" type="text" disabled> 
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="changeSign()">+/-</button>
+            <button onclick="press('%')">%</button>
+            <button onclick="press('/')">/</button>
+            <br>
+            <button onclick="press('7')">7</button>
+            <button onclick="press('8')">8</button>
+            <button onclick="press('9')">9</button>
+            <button onclick="press('*')">*</button>
+            <br>
+            <button onclick="press('4')">4</button>
+            <button onclick="press('5')">5</button>
+            <button onclick="press('6')">6</button>
+            <button onclick="press('-')">-</button>
+            <br>
+            <button onclick="press('1')">1</button>
+            <button onclick="press('2')">2</button>
+            <button onclick="press('3')">3</button>
+            <button onclick="press('+')">+</button>
+            <br>
+            <!-- so that it occupies 2 "spaces" -->
+            <button onclick="press('0')" style="width: 115px;">0</button> 
+            <button onclick="press('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
